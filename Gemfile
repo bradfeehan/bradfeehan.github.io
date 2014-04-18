@@ -7,6 +7,9 @@ gem "middleman", "~>3.3.2"
 # Use Slim templates
 gem "slim"
 
+# Use foundation-rails RubyGem to pull in Zurb Foundation
+gem "foundation-rails", require: false
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
