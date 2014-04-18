@@ -1,0 +1,4 @@
+script: scripts/release.sh
+branches:
+  only:
+    - develop
