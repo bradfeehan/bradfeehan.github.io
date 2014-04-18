@@ -40,6 +40,15 @@
 #   activate :livereload
 # end
 
+configure :development do
+  # Pretty-print Slim-generated HTML in development
+  Slim::Engine.set_default_options pretty: true
+end
+
+# Use HTML5 formatter for Slim templates
+Slim::Engine.set_default_options format: :html5
+
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
