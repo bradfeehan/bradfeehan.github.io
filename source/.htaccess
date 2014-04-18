@@ -254,7 +254,7 @@ AddType text/vtt                            vtt
 
 # The following header prevents modification of your code over 3G on some
 # European providers.
-# This is the official 'bypass' suggested by O2 in the UK.
+# This is the official "bypass" suggested by O2 in the UK.
 
 # <IfModule mod_headers.c>
 # Header set Cache-Control "no-transform"
@@ -323,7 +323,7 @@ FileETag None
 
 # Some cloud hosting services require RewriteBase to be set: goo.gl/HOcPN
 # If using the h5bp in a subdirectory, use `RewriteBase /foo` instead where
-# 'foo' is your directory.
+# "foo" is your directory.
 
 # If your web host doesn't allow the FollowSymlinks option, you may need to
 # comment it out and use `Options +SymLinksOfOwnerMatch`, but be aware of the
@@ -516,7 +516,7 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 # php_flag display_startup_errors Off
 
 # Format errors in plain text
-# Note: Leave this setting 'On' for xdebug's var_dump() output
+# Note: Leave this setting "On" for xdebug's var_dump() output
 # php_flag html_errors Off
 
 # Show multiple occurrence of error
