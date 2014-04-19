@@ -21,7 +21,7 @@ html.no-js lang="en"
     = stylesheet_link_tag "application"
     = javascript_include_tag "vendor/modernizr"
 
-  body
+  body class="page-key--#{current_page_key}"
     /[if lte IE7]
       p.chromeframe
         | You are using an outdated browser.

@@ -56,6 +56,15 @@ Slim::Engine.set_default_options format: :html5
 #   end
 # end
 
+helpers do
+  # Retrieves the current page key, which uniquely identifies the page
+  #
+  # e.g. for index.html.slim, the page key is "index".
+  def current_page_key
+    current_page.path.match(/^[^\.]+/).to_s
+  end
+end
+
 set :css_dir, "css"
 
 set :js_dir, "js"
