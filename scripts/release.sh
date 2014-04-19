@@ -27,6 +27,13 @@ function remove-files {
 	xargs -0 -I '{}' sh -c 'rm -f {}; git update-index --remove {}'
 }
 
+# Adds files to the Git index
+#
+# Expects fields separated by NULL bytes on stdin
+function add-files {
+	xargs -0 git update-index --add
+}
+
 echo "Setting Git user details to \"$GIT_USER\" <$GIT_EMAIL>..."
 git config user.email "$GIT_EMAIL"
 git config user.name "$GIT_USER"
@@ -40,13 +47,19 @@ list-files HEAD | grep -v '^\.gitignore$' | newline-to-null | remove-files
 echo "Moving build artifacts to root of repository..."
 mv build/* build/.ht* .
 
-# Add the resulting build to the Git index
-echo "Committing the result to master branch..."
+echo "Adding the resulting build to the Git index..."
+git ls-files --others --exclude-standard | newline-to-null | add-files
 
-git ls-files --others --exclude-standard | newline-to-null | xargs -0 git update-index --add
+echo "Fetching current master branch..."
+git remote add -t master -f github git@github.com:bradfeehan/bradfeehan.github.io.git
+
+echo "Committing the result to master..."
 base=$(git rev-parse HEAD)
 tree=$(git write-tree)
-master=$(echo "Middleman build for $base" | git commit-tree "$tree" -p "$base")
+old_master=$(git rev-parse github/master)
 
-echo "Pushing master to GitHub"
-git push git@github.com:bradfeehan/bradfeehan.github.io "$master":refs/heads/master
+# The new commit will be a merge between current master and this commit
+master=$(echo "Middleman build for $base" | git commit-tree "$tree" -p "$base" -p "$old_master")
+
+echo "Pushing new master to GitHub"
+git push github "$master":refs/heads/master
