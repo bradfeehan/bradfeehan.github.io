@@ -1,0 +1,12 @@
+/home/travis/.rvm/rubies/ruby-1.9.3-p484/bin/ruby extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+compiling parser.c
+linking shared-object json/ext/parser.so
+
+make  install
+/usr/bin/install -m 0755 parser.so /home/travis/build/bradfeehan/bradfeehan.github.io/vendor/bundle/ruby/1.9.1/gems/json-1.8.1/ext/json/ext/parser/.gem.20140419-3419-mt1g1h/json/ext
+installing default parser libraries
