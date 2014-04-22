@@ -2,12 +2,15 @@
 @import "foundation";
 
 header {
-	text-align: center;
+	padding: 20px;
 	background: #eee;
+	text-align: center;
+	h1, h2, h3, h4, h5, h6 {
+		margin: {top: 20px; bottom: 0; };
+	}
 }
 
 .avatar {
 	height: 200px;
-	margin: 20px;
 	@include radius($global-rounded);
 }
