@@ -1,3 +1,13 @@
 @import "settings";
 @import "foundation";
 
+header {
+	text-align: center;
+	background: #eee;
+}
+
+.avatar {
+	height: 200px;
+	margin: 20px;
+	@include radius($global-rounded);
+}
