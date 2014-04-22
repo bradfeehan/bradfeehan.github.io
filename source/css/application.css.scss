@@ -1,3 +1,4 @@
+@import "compass/typography/text/replacement";
 @import "settings";
 @import "foundation";
 
@@ -13,4 +14,18 @@ header {
 .avatar {
 	height: 200px;
 	@include radius($global-rounded);
+}
+
+.left-off-canvas-toggle {
+	position: absolute;
+	width: $tabbar-menu-icon-height;
+	height: $tabbar-menu-icon-height;
+
+	@include hamburger();
+	@include hide-text();
+}
+
+.exit-off-canvas {
+	display: none;
+	@include hide-text();
 }
