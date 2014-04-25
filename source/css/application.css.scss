@@ -2,7 +2,7 @@
 @import "settings";
 @import "foundation";
 
-header, .content, footer { padding: 20px; }
+header, .content, footer { padding: rem-calc(20); }
 
 header, footer {
 	background: #555;
@@ -14,12 +14,12 @@ header, footer {
 	}
 }
 
-header .avatar { margin-bottom: 20px; }
+header .avatar { margin-bottom: rem-calc(20); }
 
 footer p { font-size: smaller; }
 
 .avatar {
-	height: 200px;
+	width: rem-calc(200);
 	@include radius($global-rounded);
 }
 
