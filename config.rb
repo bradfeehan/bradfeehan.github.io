@@ -71,6 +71,8 @@ set :js_dir, "js"
 
 set :images_dir, "img"
 
+set :partials_dir, "partials"
+
 sprockets.import_asset 'vendor/modernizr.js'
 
 # Build-specific configuration
