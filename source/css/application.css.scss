@@ -2,6 +2,8 @@
 @import "settings";
 @import "foundation";
 
+body { min-width: rem-calc(180); }
+
 header, .content, footer { padding: rem-calc(20); }
 
 header, footer {
