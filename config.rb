@@ -63,6 +63,14 @@ helpers do
   def current_page_key
     current_page.path.match(/^[^\.]+/).to_s
   end
+
+  # Retrieves the job data
+  #
+  # This sorts the jobs by the start date of their term, putting any
+  # without start dates at the top.
+  def jobs
+    data.jobs.sort_by {|j| j.term ? j.term.start : Date.today }.reverse
+  end
 end
 
 set :css_dir, "css"
@@ -92,3 +100,6 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# Load locale files from "locale" directory
+activate :i18n

@@ -1,0 +1,76 @@
+  - company: Fontis
+    url: http://fontis.com.au
+    title: Web developer
+    term:
+        start: 2010-11-15
+        end: 2012-08-17
+    responsibilities:
+        - |
+            Full-stack e-commerce web development using PHP, Magento,
+            and Laravel
+        - |
+            Successfully completed Magento Certified Developer Plus
+            certification
+        - |
+            Liaised with and occasionally managed remote developers
+        - |
+            Initiated various productivity-improving workflows,
+            including migrating version control from Bazaar to Git, and
+            advocating the use of improved task management tools
+        - |
+            Frequently required to quickly come up-to-speed on new
+            codebases, including conducting audits and preparing
+            reports for clients and internal use
+    skills:
+        - PHP
+        - Magento
+        - Customer support
+
+  - company: 99designs
+    url: http://99designs.com
+    title: Developer/DevOps
+    term:
+        start: 2012-08-25
+    responsibilities:
+        - |
+            Full-stack web development using PHP, Ruby and Rails, and
+            Python
+        - |
+            Automated standard operating environment using Vagrant,
+            VirtualBox, and Babushka
+        - |
+            Became an expert on internationalisation and localisation
+            of existing web applications
+        - |
+            Conducted review of EC2 instance types in use, improving
+            performance for end-users and reducing cost for the
+            business
+        - |
+            Worked on refactoring a very large, monolithic application
+            into simple, maintainable services
+    skills:
+        - PHP
+        - Ruby
+        - DevOps
+        - Continuous deployment
+
+  - company: Lead Wrench
+    url: http://www.leadwrench.com
+    title: Freelance developer
+    term:
+        start: 2013-12-11
+        end: 2014-01-22
+    responsibilities:
+        - |
+            Re-wrote a Python script as a PHP Composer package, with
+            100% unit test coverage
+        - |
+            Liased with client via e-mail and Skype instant messaging
+        - |
+            Received extremely positive feedback and was awarded a
+            bonus for outperforming the client's expectations
+    skills:
+        - PHP
+        - Python
+        - PHPUnit
+        - Composer

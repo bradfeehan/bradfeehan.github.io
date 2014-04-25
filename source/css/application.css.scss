@@ -36,3 +36,17 @@ footer p { font-size: smaller; }
 	display: none;
 	@include hide-text();
 }
+
+.skills ul {
+	list-style-type: none;
+	margin-left: 0;
+
+	li {
+		@include label($radius: $global-rounded);
+		margin-bottom: 0;
+	}
+}
+
+.skills, .responsibilities {
+	h4 { display: none; }
+}
