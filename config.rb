@@ -66,10 +66,10 @@ helpers do
 
   # Retrieves the job data
   #
-  # This sorts the jobs by the start date of their term, putting any
-  # without start dates at the top.
+  # This sorts the jobs by the end date of their term, putting any
+  # without end dates at the top.
   def jobs
-    data.jobs.sort_by {|j| j.term ? j.term.start : Date.today }.reverse
+    data.jobs.sort_by {|j| (j.term.end rescue nil) || Date.today }.reverse
   end
 end
 
