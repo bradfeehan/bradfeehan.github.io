@@ -1,4 +1,7 @@
 h3
+  - if job.title
+    = job.title
+    '  at
   - if job.url
     a href=job.url
       = job.company
