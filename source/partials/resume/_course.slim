@@ -1,0 +1,26 @@
+h3
+  - if course.title
+    - if course.title.is_a? Enumerable
+      - for title in course.title
+        = title
+        br
+    - else
+      = course.title
+      br
+  small
+    = course.institute
+    ' ,
+
+    / Job term subtitle, only if the start is specified
+    - if course.term and course.term.start
+      = I18n.localize course.term.start, format: :job_term
+      == %w[&nbsp; &ndash; &nbsp;].join
+      / If no end is specified, this means the course is still current
+      - if course.term.end
+        = I18n.localize course.term.end, format: :job_term
+      - else
+        ' Current
+
+- if course.notes
+  .notes
+    ul: li = course.notes

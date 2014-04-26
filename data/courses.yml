@@ -1,0 +1,21 @@
+  - institute: Wantirna Secondary College
+    title: Victorian Certificate of Education
+    term:
+        start: 2004-02-01
+        end: 2005-11-11
+    notes: Awarded ENTER score of 94.00
+
+  - institute: Wantirna Secondary College
+    title: Certificate III in Information Technology (Software)
+    term:
+        start: 2003-02-01
+        end: 2004-10-29
+
+  - institute: RMIT University
+    title:
+      - "Bachelor of Computer Science with Distinction"
+      - "Bachelor of Engineering with Honours 1st Class, Computer and Network Engineering"
+    term:
+        start: 2005-02-27
+        end: 2010-11-04
+    notes: Achieved overall GPA of 3.23

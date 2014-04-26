@@ -64,12 +64,21 @@ helpers do
     current_page.path.match(/^[^\.]+/).to_s
   end
 
-  # Retrieves the job data
-  #
-  # This sorts the jobs by the end date of their term, putting any
-  # without end dates at the top.
+  # Retrieves the job data sorted by end date
   def jobs
-    data.jobs.sort_by {|j| (j.term.end rescue nil) || Date.today }.reverse
+    sort_by_term_end_date data.jobs
+  end
+
+  # Retrieves the course data sorted by end date
+  def courses
+    sort_by_term_end_date data.courses
+  end
+
+  # Sorts a collection by the end date
+  def sort_by_term_end_date(collection)
+    collection.sort_by do |entity|
+      (entity.term.end rescue nil) || Date.today
+    end.reverse
   end
 end
 
