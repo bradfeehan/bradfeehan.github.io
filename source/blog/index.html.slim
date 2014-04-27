@@ -13,7 +13,8 @@ per_page: 10
   h2
     = link_to article.title, article
     span = article.date.strftime("%b %e")
-  p = article.body
+  p = article.body.gsub /<h2.*\Z/m, ""
+  = link_to "Read more", article
 
 - if paginate
   - if next_page
