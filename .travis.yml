@@ -1,3 +1,6 @@
+language: ruby
+rvm:
+  - 2.1.1
 before_script:
   - echo -n $id_rsa_{0..35} >> ~/.ssh/id_rsa_base64
   - base64 --decode --ignore-garbage ~/.ssh/id_rsa_base64 > ~/.ssh/id_rsa
