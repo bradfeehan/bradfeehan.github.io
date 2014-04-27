@@ -120,5 +120,5 @@ activate :directory_indexes
 activate :blog do |blog|
   blog.layout = "blog"
   blog.prefix = "blog"
-  blog.permalink = "{title}"
+  blog.permalink = "{title}/index.html"
 end
