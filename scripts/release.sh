@@ -39,7 +39,7 @@ git config user.email "$GIT_EMAIL"
 git config user.name "$GIT_USER"
 
 echo "Building the static site using Middleman..."
-bundle exec middleman build
+bundle exec middleman build --verbose
 
 echo "Removing source files..."
 list-files HEAD | grep -v '^\.gitignore$' | newline-to-null | remove-files
