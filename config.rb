@@ -112,3 +112,13 @@ end
 
 # Load locale files from "locale" directory
 activate :i18n
+
+# Activate "directory_indexes" extension (pretty URLs)
+activate :directory_indexes
+
+# Activate "middleman-blog" gem
+activate :blog do |blog|
+  blog.layout = "blog"
+  blog.prefix = "blog"
+  blog.permalink = "{title}"
+end
