@@ -112,3 +112,8 @@ end
 
 # Load locale files from "locale" directory
 activate :i18n
+
+# Activate "middleman-blog" gem
+activate :blog do |blog|
+  blog.prefix = "blog"
+end
