@@ -31,6 +31,26 @@ header, footer {
 // Header on mobile has spacing between avatar and title
 header .avatar { margin-bottom: rem-calc(20); }
 
+// Desktop navigation bar
+.desktop-navigation {
+	display: none;
+
+	ul {
+		list-style-type: none;
+		margin: rem-calc(20) 0 0;
+	}
+
+	li {
+		display: inline-block;
+
+		a {
+			margin: 0 rem-calc(5);
+			padding: rem-calc(10);
+			color: scale-color($primary-color, $lightness: 60%);
+		}
+	}
+}
+
 // Header (desktop)
 @media #{$medium-up} {
 	// "body" tag is a hack to help increase selector specificity
@@ -55,6 +75,12 @@ header .avatar { margin-bottom: rem-calc(20); }
 				margin-right: rem-calc(20);
 			}
 		}
+
+		// Hide off-canvas toggle button (hamburger)
+		.left-off-canvas-toggle { display: none; }
+
+		// Show the desktop navigation bar (to replace off-canvas menu)
+		.desktop-navigation { display: block; }
 	}
 }
 
