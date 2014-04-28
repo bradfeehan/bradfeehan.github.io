@@ -28,6 +28,33 @@ header, footer {
 // Header on mobile has spacing between avatar and title
 header .avatar { margin-bottom: rem-calc(20); }
 
+// Header (desktop)
+@media #{$medium-up} {
+	// "body" tag is a hack to help increase selector specificity
+	body {
+		header {
+			text-align: left;
+
+			h1, img.avatar {
+				margin-bottom: 0;
+				vertical-align: middle;
+				line-height: rem-calc(80);
+			}
+
+			h1 {
+				display: inline-block;
+				font-size: rem-calc(60);
+			}
+
+			img.avatar {
+				height: rem-calc(80);
+				width: rem-calc(80);
+				margin-right: rem-calc(20);
+			}
+		}
+	}
+}
+
 .avatar {
 	width: rem-calc(200);
 	@include radius($global-rounded);
