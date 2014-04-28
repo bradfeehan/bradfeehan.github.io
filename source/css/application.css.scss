@@ -6,7 +6,7 @@
 .gutter { margin: 0 auto; }
 @mixin page-width($width) { .gutter { width: $width; } }
 @media #{$medium-only} { @include page-width(rem-calc(640)); } // 640px-1024px
-@media #{$large-only} { @include page-width(rem-calc(800)); } // 1025px-1440px
+@media #{$large-up} { @include page-width(rem-calc(800)); } // 1025px-1440px
 
 // Set minimum width, horizontal scroll will be needed below this width
 body { min-width: rem-calc(180); }
