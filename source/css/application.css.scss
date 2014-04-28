@@ -2,24 +2,19 @@
 @import "settings";
 @import "foundation";
 
-// Layout
-
-@mixin page-width($width) {
-	.gutter {
-		width: $width;
-		margin: 0 auto;
-	}
-}
-
-body { min-width: rem-calc(180); }
+// Set up gutters (spacing on sides for large displays)
+.gutter { margin: 0 auto; }
+@mixin page-width($width) { .gutter { width: $width; } }
 @media #{$medium-only} { @include page-width(rem-calc(640)); } // 640px-1024px
 @media #{$large-only} { @include page-width(rem-calc(800)); } // 1025px-1440px
 
+// Set minimum width, horizontal scroll will be needed below this width
+body { min-width: rem-calc(180); }
 
-// Style
-
+// Spacing of sections
 header, .content, footer { padding: rem-calc(20); }
 
+// Background colour of header and footer sections
 header, footer {
 	background: #555;
 	text-align: center;
@@ -30,9 +25,8 @@ header, footer {
 	}
 }
 
+// Header on mobile has spacing between avatar and title
 header .avatar { margin-bottom: rem-calc(20); }
-
-footer p { font-size: smaller; }
 
 .avatar {
 	width: rem-calc(200);
@@ -66,3 +60,6 @@ footer p { font-size: smaller; }
 .skills, .responsibilities {
 	h4 { display: none; }
 }
+
+// Footer
+footer p { font-size: smaller; }
