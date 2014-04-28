@@ -2,7 +2,21 @@
 @import "settings";
 @import "foundation";
 
+// Layout
+
+@mixin page-width($width) {
+	.gutter {
+		width: $width;
+		margin: 0 auto;
+	}
+}
+
 body { min-width: rem-calc(180); }
+@media #{$medium-only} { @include page-width(rem-calc(640)); } // 640px-1024px
+@media #{$large-only} { @include page-width(rem-calc(800)); } // 1025px-1440px
+
+
+// Style
 
 header, .content, footer { padding: rem-calc(20); }
 

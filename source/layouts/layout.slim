@@ -50,7 +50,7 @@ html.no-js lang="en"
 
         section.main
           = partial "page/header"
-          .content = yield
+          .content: .gutter = yield
           = partial "page/footer"
 
         a.exit-off-canvas Close
