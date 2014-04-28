@@ -13,6 +13,9 @@ body { min-width: rem-calc(180); }
 
 // Spacing of sections
 header, .content, footer { padding: rem-calc(20); }
+@media #{$large-up} {
+	header, .content, footer { padding: rem-calc(40); }
+}
 
 // Background colour of header and footer sections
 header, footer {
