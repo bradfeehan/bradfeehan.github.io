@@ -31,6 +31,7 @@
     title: Developer/DevOps
     term:
         start: 2012-08-25
+        end: 2015-10-28
     responsibilities:
         - |
             Full-stack web development using PHP, Ruby and Rails, and
@@ -74,3 +75,33 @@
         - Python
         - PHPUnit
         - Composer
+
+  - company: Marketplacer
+    url: https://marketplacer.com
+    title: Infrastructure Engineer
+    term:
+      start: 2015-11-02
+      end: 2017-08-11
+    responsibilities:
+        - |
+            Migrated infrastructure from dedicated servers to AWS
+            using Terraform and Chef, improving reliability
+        - | 
+            Migrated from instance backed image uploads to a
+            content-addressable storage backed by S3, improving
+            reliability and implicitly de-duplicating uploads
+        - |
+            Championed best practices among the development team,
+            such as backing CI containers with a Docker registry
+            to simplify updates
+        - |
+            Worked extensively on developer tools such as a
+            command-line interface for common development tasks
+    skills:
+        - Ruby
+        - Go
+        - Docker
+        - AWS
+        - Terraform
+        - Automation
+        - Dev. tools
