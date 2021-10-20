@@ -1,8 +1,8 @@
 #!/bin/bash
 set -o errexit
 
-GIT_USER="Travis CI"
-GIT_EMAIL="travis@localhost"
+GIT_USER="github-actions[bot]"
+GIT_EMAIL="41898282+github-actions[bot]@users.noreply.github.com"
 
 # Lists files tracked by Git in the current repository for a given ref
 #
