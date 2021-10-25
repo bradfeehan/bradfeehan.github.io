@@ -28,7 +28,7 @@ twitter_username: bradfeehan
 github_username:  bradfeehan
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
 
