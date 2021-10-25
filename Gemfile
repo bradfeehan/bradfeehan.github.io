@@ -33,3 +33,6 @@ gem 'wdm', '~> 0.1.1', platforms: %i[mingw x64_mingw mswin]
 group :development, :test do
   gem 'rubocop', '~> 1.22'
 end
+
+# https://github.com/github/pages-gem/issues/752
+gem 'webrick', '~> 1.7'
