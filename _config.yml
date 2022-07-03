@@ -28,7 +28,6 @@ twitter_username: bradfeehan
 github_username:  bradfeehan
 
 # Build settings
-theme: jekyll-theme-hydeout
 remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
