@@ -49,7 +49,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-feed (0.15.1)
+    jekyll-feed (0.16.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
@@ -128,7 +128,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.2.2)
-  jekyll-feed (~> 0.12)
+  jekyll-feed (~> 0.16)
   jekyll-theme-hydeout (~> 4.2)
   minima (~> 2.5)
   rubocop (~> 1.31)
