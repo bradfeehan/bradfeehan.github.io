@@ -6,13 +6,26 @@ sidebar_link: true
 ---
 # Experience
 
+## Senior Site Reliability Engineer at [Kraken] Digital Asset Exchange
+
+<!-- markdown-link-check-disable-next-line -->
+[Kraken]: <https://www.kraken.com>
+
+*Feb 2022 - current*
+
+Terraform · Docker · Kubernetes · Nomad · Gitlab CI · Nginx · PHP
+
+- Consolidated and centralised dashboards for the team in Grafana and Splunk
+- Created Terraform module and Gitlab repository with CI pipelines to manage on-call shifts in Pagerduty adhering to infrastructure-as code principles
+- Led a project to convert homepage and marketing website from Next.js server-side generation to server-side rendering (SSG to SSR), using Docker Compose, Kubernetes, Nomad, Vault, Nginx, and Prometheus
+
 
 ## Senior DevOps Engineer at [Zendesk], [Answer Bot]
 
 [Zendesk]: <https://zendesk.com>
 [Answer Bot]: <https://www.zendesk.com/service/answer-bot/>
 
-*Mar 2019 – current*
+*Mar 2019 – Feb 2022*
 
 Ruby · Python · Chef · Kubernetes · AWS · CI/CD · AI/ML
 
