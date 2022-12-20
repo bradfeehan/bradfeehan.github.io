@@ -32,7 +32,7 @@ end
 gem 'wdm', '~> 0.1.1', platforms: %i[mingw x64_mingw mswin]
 
 group :development, :test do
-  gem 'rubocop', '~> 1.31'
+  gem 'rubocop', '~> 1.41'
 end
 
 # https://github.com/github/pages-gem/issues/752
