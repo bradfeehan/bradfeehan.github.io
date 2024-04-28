@@ -18,7 +18,7 @@ jobs:
       REPO: https://github.com/rhysd/actionlint
       VERSION: 1.6.13
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup actionlint
         run: |
@@ -36,7 +36,7 @@ jobs:
     name: Markdown URLs
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         file-extension: .markdown
