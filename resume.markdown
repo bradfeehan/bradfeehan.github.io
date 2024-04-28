@@ -6,6 +6,28 @@ sidebar_link: true
 ---
 # Experience
 
+## Senior Site Reliability Engineer at [Shopify]
+
+[Shopify]: <https://www.shopify.com/au/about>
+
+*Jan 2023 - current*
+
+Resiliency · Incident Management · Rails · MySQL · GCP · CI/CD
+
+* Primary incident manager on-call for millions of online stores:
+  first responder to automated alerts signalling interruptions to
+  commerce
+* Primary manager of ongoing incidents, ensuring the right teams'
+  involement, responsible for progressing issues toward resolution
+* Conducting follow-up on each meaningful incident, to learn and to
+  extract appropriate action items, so teams know what to do next
+* Consultation with other engineering groups on how to build
+  low-latency, debuggable, highly resilient systems
+* Cleaning up the noise in our signals, ensuring we can get an
+  understanding of our systems and debug problems easily
+* Helping teams build tools to automate the toil of on-call duties
+
+
 ## Senior Site Reliability Engineer at [Kraken] Digital Asset Exchange
 
 <!-- markdown-link-check-disable-next-line -->
