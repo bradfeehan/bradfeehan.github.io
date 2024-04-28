@@ -11,13 +11,18 @@ sidebar_link: true
 <!-- markdown-link-check-disable-next-line -->
 [Kraken]: <https://www.kraken.com>
 
-*Feb 2022 - current*
+*Feb 2022 - Oct 2022*
 
 Terraform · Docker · Kubernetes · Nomad · Gitlab CI · Nginx · PHP
 
-- Consolidated and centralised dashboards for the team in Grafana and Splunk
-- Created Terraform module and Gitlab repository with CI pipelines to manage on-call shifts in Pagerduty adhering to infrastructure-as code principles
-- Led a project to convert homepage and marketing website from Next.js server-side generation to server-side rendering (SSG to SSR), using Docker Compose, Kubernetes, Nomad, Vault, Nginx, and Prometheus
+- Consolidated and centralised dashboards for the team in Grafana and
+  Splunk
+- Created Terraform module and Gitlab repository with CI pipelines to
+  manage on-call shifts in Pagerduty adhering to infrastructure-as
+  code principles
+- Led a project to convert homepage and marketing website from Next.js
+  server-side generation to server-side rendering (SSG to SSR), using
+  Docker Compose, Kubernetes, Nomad, Vault, Nginx, and Prometheus
 
 
 ## Senior DevOps Engineer at [Zendesk], [Answer Bot]
