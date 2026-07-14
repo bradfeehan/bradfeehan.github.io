@@ -6,26 +6,61 @@ sidebar_link: true
 ---
 # Experience
 
+## Senior Site Reliability Engineer at [Cisco], [Duo Security]
+
+[Cisco]: <https://www.cisco.com>
+[Duo Security]: <https://duo.com>
+
+*May 2025 - current*
+
+Python · AWS · Kubernetes · IAM · Security · Monitoring & Alerting · AI Tooling
+
+* Built an automated cross-account EBS snapshot lifecycle service
+  spanning 12 AWS regions, safely eliminating the vast majority of
+  orphaned build snapshots and a major recurring storage cost
+* Hardening the security posture of production: replacing static IAM
+  credentials with IAM roles and IRSA across Kubernetes microservices
+  for short-lived credentials and simpler rotation
+* Onboarded the APJC team into Duo-wide vulnerability management:
+  authored documentation, delivered training, and lead the region's
+  SLA-driven triage
+* Built an AI agent skill that researches otherwise-unassignable
+  vulnerability tickets in the live environment (read-only) and
+  recommends an owner with rationale and evidence — adopted by the
+  entire on-call rotation, cutting investigations from a documented
+  two-hour timebox to 5–10 minutes per ticket
+* Authored an incident-command review adopted by the team, leading to
+  new documentation, training, and clearer paging expectations
+* First-responder on-call for a high-availability security SaaS,
+  triaging and engaging product teams across US/APJC timezones
+
+
 ## Senior Site Reliability Engineer at [Shopify]
 
 [Shopify]: <https://www.shopify.com/au/about>
 
-*Jan 2023 - current*
+*Jan 2023 - May 2025*
 
-Resiliency · Incident Management · Rails · MySQL · GCP · CI/CD
+Resiliency · Incident Management · Rails · MySQL · GCP · CI/CD · Chaos Engineering
 
-* Primary incident manager on-call for millions of online stores:
-  first responder to automated alerts signalling interruptions to
-  commerce
-* Primary manager of ongoing incidents, ensuring the right teams'
-  involement, responsible for progressing issues toward resolution
-* Conducting follow-up on each meaningful incident, to learn and to
-  extract appropriate action items, so teams know what to do next
-* Consultation with other engineering groups on how to build
-  low-latency, debuggable, highly resilient systems
-* Cleaning up the noise in our signals, ensuring we can get an
-  understanding of our systems and debug problems easily
-* Helping teams build tools to automate the toil of on-call duties
+* Incident Manager On Call for the entire platform, commanding scores
+  of production incidents affecting millions of online stores —
+  aligning responders under pressure and driving to resolution
+* Built and launched slow-query detection in CI for Shopify's core
+  monolith, attacking the cause of as many as 1-in-5 merchant-impacting
+  incidents escalated to SRE — co-presented this work at USENIX
+  SREcon25 Americas
+* Designed and ran game days: fault injection against internal
+  tooling and its dependencies, including a live failover exercise
+  for a full Slack outage
+* Invested directly in service codebases post-incident: circuit
+  breakers, backpressure, alert tuning, and metric/SLO improvements
+* Built a second-engineer approval interface for risky operational
+  commands, with audit history and a chat-independent path
+* On-call through Black Friday/Cyber Monday 2023 and 2024 — US$11.5B
+  in merchant sales and databases peaking at 45M queries/second in
+  2024 — kept quiet by design via capacity planning, load testing,
+  and game days
 
 
 ## Senior Site Reliability Engineer at [Kraken] Digital Asset Exchange
@@ -75,8 +110,10 @@ Ruby · Java · MySQL · Vitess · Cryptocurrency
 - Worked on database sharding for the banking ledger, which handles
   tens of thousands of queries per second, tracking over US$100M of
   stored value on behalf of over 10M CashApp customers
-- Liaised with VISA to make regulatory compliance changes to the
-  ISO8583 file format which Square exchanges with card networks
+- Resolved a Visa compliance escalation under threat of fines:
+  traced non-compliant transactions against card-network
+  specifications and fixed billing-address data in the ISO 8583
+  binary interchange format
 - Improved internal tooling for customer support agents and added
   Bitcoin-related functionality
 
@@ -137,6 +174,21 @@ PHP · Magento · Customer support
   including conducting audits and preparing reports for clients and
   internal use
 
+
+
+# Talks
+
+## [Tackling Slow Queries: A Practical Approach to Prevention and Correction][talk]
+
+###### [USENIX SREcon25 Americas][srecon], Santa Clara — March 2025
+
+[talk]: <https://www.youtube.com/watch?v=pJkCi7gn5uQ>
+[srecon]: <https://www.usenix.org/conference/srecon25americas/presentation/famili>
+
+Co-presented (with Kurni Famili) how Shopify tackles slow database
+queries from both directions: catching new queries at CI time before
+they reach production, and mining production slow-query logs to drive
+corrective work with owning teams.
 
 
 # Education
